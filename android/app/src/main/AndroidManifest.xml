@@ -1,4 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Step 3: Check internet connection -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <!-- Wifi -->
+    <uses-permission android:name="android.permission.INTERNET"/> <!-- Cellular -->
+
     <!-- Step 1: Install icon and chane name app -->
     <application
         android:label="Hey Bro"

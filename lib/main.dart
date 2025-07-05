@@ -3,7 +3,15 @@ import 'package:flutter/material.dart';
 // Step 2: App Screen
 import 'package:learn_flutter_67_2_2/first_screen.dart';
 
-void main() {
+// Step 5: Firebase configuration
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
+// Step 5: Firebase configuration
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
   runApp(const MyApp());
 }
 
