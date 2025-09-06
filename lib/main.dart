@@ -21,6 +21,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Step 2: App Screen
-    return MaterialApp(home: FirstScreen());
+    return MaterialApp(home: FirstScreen(), debugShowCheckedModeBanner: false);
   }
 }
